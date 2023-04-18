@@ -7,6 +7,8 @@ is user-friendly, adaptable, and energy-efficient. It is intended to be a sustai
 reduces energy consumption. The lighting system will be easy to use and will adapt to the changing needs
 of its users
 
+![alt text](https://github.com/Gaasll/Illumi-Dance/blob/main/home.png?raw=true)
+
 ## Vison
 
 This product addresses the growing demand for lighting solutions in home decoration,
@@ -15,6 +17,8 @@ products, Illumi-Dance has the ability to set an alarm for the light show. Users
 web-app, and 30 minutes before the alarm goes off, the LED lights will automatically turn on and start the
 ”sunrise” show without sound. This feature is perfect for people who want to wake up to a gently simulated
 sunlight instead of a traditional alarm clock.
+
+
 
 ## Product features
 
