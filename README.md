@@ -24,12 +24,12 @@ can find the product features listed below.
 
 ## Basic features:
 
-• The system will include seven LED effects such as chaser, blink, fade, and pulse to give users a
+* The system will include seven LED effects such as chaser, blink, fade, and pulse to give users a
 variety of options to choose from.
-• Users will be able to control the LED effects through a webapp interface, making it easy and intuitive
+* Users will be able to control the LED effects through a webapp interface, making it easy and intuitive
 to save their favorite LED light shows.
-• The system will save previous states regularly.
-• The web-app will have a login authentication.
-• The web-app will have an end-to-end secured communication
-• The system will have a timer function that triggers the lighting system to turn on or off at the specified
+* The system will save previous states regularly.
+* The web-app will have a login authentication.
+* The web-app will have an end-to-end secured communication
+* The system will have a timer function that triggers the lighting system to turn on or off at the specified
 times.
