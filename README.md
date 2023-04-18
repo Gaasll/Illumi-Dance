@@ -1,6 +1,11 @@
 # Illumi-Dance
 
-This template should help get you started developing with Vue 3 in Vite.
+The purpose of the proposed project is to develop a smart lighting system that can be controlled via a web
+application using Wi-Fi. Compared to conventional lighting fixtures and bulbs, this system offers more
+flexibility, convenience, and energy efficiency. The product’s design aims to create a lighting solution that
+is user-friendly, adaptable, and energy-efficient. It is intended to be a sustainable alternative that effectively
+reduces energy consumption. The lighting system will be easy to use and will adapt to the changing needs
+of its users
 
 ## Recommended IDE Setup
 
