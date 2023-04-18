@@ -33,3 +33,10 @@ to save their favorite LED light shows.
 * The web-app will have an end-to-end secured communication
 * The system will have a timer function that triggers the lighting system to turn on or off at the specified
 times.
+
+## Advanced features:
+* Provide users with the ability to customize their own patterns and save them in the web-app.
+* The app sends push up notifications on the phone for example when the lights are turned on after a
+timer-based show.
+* Add a sensor that automatically adjusts the brightness level according to the time of day (increasing
+it during daylight and decreasing it during nighttime).
