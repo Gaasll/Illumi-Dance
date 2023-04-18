@@ -6,9 +6,9 @@ flexibility, convenience, and energy efficiency. The product’s design aims to 
 is user-friendly, adaptable, and energy-efficient. It is intended to be a sustainable alternative that effectively
 reduces energy consumption. The lighting system will be easy to use and will adapt to the changing needs
 of its users
-
+<p align="center">
 ![alt text](https://github.com/Gaasll/Illumi-Dance/blob/main/home.png?raw=true)
-
+</p>
 ## Vison
 
 This product addresses the growing demand for lighting solutions in home decoration,
