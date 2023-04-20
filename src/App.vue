@@ -1,6 +1,34 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import { onMounted, ref } from 'vue';
+import { getAuth, onAuthStateChanged, signOut} from "firebase/auth";
+import router from './router';
+const isLoggedIn = ref(false);
+
+let auth;
+onMounted(()=>{
+  auth = getAuth();
+  onAuthStateChanged(auth, (user)=>{
+    if (user){
+      isLoggedIn.value = true;
+    }else{
+      isLoggedIn.value = false;
+    }
+
+  });
+
+});
+
+
+const handleSignOut = () => {
+  signOut(auth).then(()=>{
+    router.push("/");
+
+  });
+
+};
+
 </script>
 
 <template>
@@ -12,7 +40,8 @@ import HelloWorld from './components/HelloWorld.vue'
 
       <nav>
         <RouterLink to="/home">Home</RouterLink>
-        <RouterLink to="/try">Try it!</RouterLink> 
+        <RouterLink to="/try">Try it!</RouterLink>
+        <button @click="handleSignOut" v-if="isLoggedIn">Sign out</button>
         
       </nav>
       <br>

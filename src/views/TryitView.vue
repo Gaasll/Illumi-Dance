@@ -2,6 +2,13 @@
   
  <br>
     <div>
+
+
+      <h1>LED Control</h1>
+      
+      <button @click="handleToggleClick">
+     
+      </button>
       <div>
         <div class="multi-button">
           <div class="led-container pattern1">
@@ -49,6 +56,8 @@
 
 <script>
 import LedLamp from '../components/LedLamp.vue';
+import { ref, set } from 'firebase/database';
+import {db} from "../firebase"
 
 export default {
   components: {
@@ -109,6 +118,19 @@ export default {
           rightLamp--;
         }, 50);
       }, 100);
+    },
+
+    //FIREBASE
+    handleToggleClick() {
+      const ledStateRef = ref(db, 'LED_STATUS');
+      
+      set(ledStateRef, 1)
+        .then(() => {
+          //this.ledState = newValue === 1;
+        })
+        .catch((error) => {
+          console.error('Error writing to Firebase: ', error);
+        });
     },
 
   }
