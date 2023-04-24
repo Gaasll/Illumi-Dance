@@ -4,9 +4,9 @@
     <div>
 
 
-      <h1>LED Control</h1>
+    
       
-      <button @click="handleToggleClick">
+      <button @click="handleToggleClick"> Firebase
      
       </button>
       <div>

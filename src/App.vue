@@ -2,17 +2,17 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import { onMounted, ref } from 'vue';
-import { getAuth, onAuthStateChanged, signOut} from "firebase/auth";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import router from './router';
 const isLoggedIn = ref(false);
 
 let auth;
-onMounted(()=>{
+onMounted(() => {
   auth = getAuth();
-  onAuthStateChanged(auth, (user)=>{
-    if (user){
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
       isLoggedIn.value = true;
-    }else{
+    } else {
       isLoggedIn.value = false;
     }
 
@@ -22,7 +22,7 @@ onMounted(()=>{
 
 
 const handleSignOut = () => {
-  signOut(auth).then(()=>{
+  signOut(auth).then(() => {
     router.push("/");
 
   });
@@ -33,19 +33,19 @@ const handleSignOut = () => {
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/final.png" width="125" height="125" />
-
     <div class="wrapper">
+      <div>
+      <img alt="Vue logo" class="logo" src="@/assets/final.png" width="125" height="125" /></div>
       <HelloWorld msg="ILLUMI Dance" />
 
-      <nav>
-        <RouterLink to="/home">Home</RouterLink>
-        <RouterLink to="/try">Try it!</RouterLink>
-        <button @click="handleSignOut" v-if="isLoggedIn">Sign out</button>
-        
-      </nav>
-      <br>
+
+      
     </div>
+    <nav>
+      <RouterLink to="/home">Home</RouterLink>
+      <RouterLink to="/try">Try it!</RouterLink>
+      <button @click="handleSignOut" v-if="isLoggedIn">Sign out</button>
+    </nav>
   </header>
 
   <RouterView />
@@ -55,7 +55,6 @@ const handleSignOut = () => {
 header {
   line-height: 1.5;
   max-height: 100vh;
-  
 }
 
 .logo {
@@ -68,6 +67,7 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+ 
 }
 
 nav a.router-link-exact-active {
@@ -88,31 +88,45 @@ nav a:first-of-type {
   border: 0;
 }
 
+button {
+  padding: 5px 13px;
+  opacity: 50%;
+  background-color: #818181;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #121312;
+}
+
 @media (min-width: 1024px) {
   header {
     display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+    margin-right: 2rem;
   }
 
   nav {
+    margin-top: 0;
     text-align: left;
-    margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
-    margin-top: 1rem;
+    width: 100%;
   }
 }
-
 </style>
