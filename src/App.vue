@@ -29,37 +29,107 @@ const handleSignOut = () => {
 
 };
 
+const goToInfo = () => {
+ 
+    router.push("/info");
+
+
+};
+
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <div>
-      <img alt="Vue logo" class="logo" src="@/assets/final.png" width="125" height="125" /></div>
-      <HelloWorld msg="ILLUMI Dance" />
-
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+   <span class="material-symbols-outlined" @click="goToInfo">
+  info
+  </span>
+    <header>
       
-    </div>
+      
+      <div class="logo-container">
+        <img alt="Vue logo" class="logo" src="@/assets/final.png" width="90" height="90" />
+        <HelloWorld msg="ILLUMI Dance" />
+      </div>
+      
+    
     <nav>
       <RouterLink to="/home">Home</RouterLink>
-      <RouterLink to="/try">Try it!</RouterLink>
+      <RouterLink to="/pattern">Try it!</RouterLink>
+      <RouterLink to="/custom">Customize</RouterLink>
       <button @click="handleSignOut" v-if="isLoggedIn">Sign out</button>
     </nav>
+    <br>
+    <div class="line"></div>
   </header>
 
   <RouterView />
 </template>
 
 <style scoped>
+.my-button {
+  border-radius: 50%;
+  width: 8px;
+  height: 26px;
+  margin-left: 3px;
+  margin-top: 3px;
+  
+  color: white;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+  
+}
 header {
   line-height: 1.5;
   max-height: 100vh;
 }
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.material-symbols-outlined{
+  font-size: 14px;
+  margin-left: 3px;
+  background: linear-gradient(90deg, #fff, #121312, #d5d5d5);
+  background-size: 200% 200%;
+  -webkit-animation: rotating-shine 4s linear infinite;
+  -moz-animation: rotating-shine 4s linear infinite;
+  animation: rotating-shine 4s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes rotating-shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@-moz-keyframes rotating-shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes rotating-shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
 
 .logo {
-  display: block;
-  margin: 0 auto 2rem;
+  margin-bottom: 2rem;
 }
 
 nav {
@@ -96,11 +166,23 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  height: 20px;
+  font-size: 10px;
 }
 
 button:hover {
   background-color: #121312;
 }
+.line {
+  border-top: 1px solid rgb(119, 117, 117);
+  opacity: 18%;
+   width: 85%;
+  display: block;
+  margin: auto;
+
+}
+
+
 
 @media (min-width: 1024px) {
   header {
@@ -117,13 +199,37 @@ button:hover {
     align-items: center;
   }
 
-  .logo {
-    margin-right: 2rem;
-  }
+  .line {
+
+   width: 60%;
+
+}
+
+img{
+  height: 125px;
+  width: 125px;
+}
+
+  button {
+  padding: 5px 13px;
+  opacity: 50%;
+  background-color: #818181;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 23px;
+  font-size: 13px;
+}
+
+
+
+
+ 
 
   nav {
     margin-top: 0;
-    text-align: left;
+    text-align: center;
     font-size: 1rem;
     padding: 1rem 0;
     width: 100%;

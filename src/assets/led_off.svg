@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 150 150">
+  <!-- Base of lamp -->
+  <rect x="30" y="100" width="90" height="10" fill="#606060" />
+  <rect x="35" y="105" width="80" height="5" fill="#888" />
+  <!-- Semi-circle for top of lamp -->
+ 
+  <!-- Inner semi-circle for top of lamp -->
+  
+  <!-- LED light -->
+  
+  <!-- Shadow effect -->
+  <rect x="30" y="100" width="90" height="10" fill="#000" opacity="0.1" filter="url(#shadow)" />
+  <path d="M 35 85 Q 75 45 115 85" fill="#000" opacity="0.1" filter="url(#shadow)" />
+
+  
+  <!-- Shadow filter -->
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feOffset in="SourceAlpha" dx="2" dy="2" />
+    <feGaussianBlur stdDeviation="2" />
+    <feComponentTransfer>
+      <feFuncA type="linear" slope="0.2" />
+    </feComponentTransfer>
+    <feMerge>
+      <feMergeNode />
+      <feMergeNode in="SourceGraphic" />
+    </feMerge>
+  </filter>
+</svg>
+
+
+
+
+
+
+
+ 

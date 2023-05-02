@@ -2,7 +2,7 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import { getDatabase } from "firebase/database";
 import firebaseConfig from "/src/firebaseConfig.js";
-import IllumiModel from "./IllumiModel";
+//import IllumiModel from "./IllumiModel";
 
 const app= firebase.initializeApp(firebaseConfig)
 const db = getDatabase(app);

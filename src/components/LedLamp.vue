@@ -23,6 +23,6 @@ export default {
 }
 
 .led-green {
-  background-color: green;
+  background-color: #d1c029;
 }
 </style>

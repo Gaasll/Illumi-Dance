@@ -1,7 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import TryitView from "../views/TryitView.vue"
+
 import RegisterView from "../views/RegisterView.vue"
+import CustomView from "../views/CustomView.vue"
+import pattern from "../views/PatternTest.vue"
+import info from "../components/3D.vue"
 
 
 const router = createRouter({
@@ -18,12 +21,12 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: "/try",
-      name: "try",
+      path: "/pattern",
+      name: "pattern",
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: TryitView,
+      component: pattern,
     },
 
     {
@@ -33,7 +36,19 @@ const router = createRouter({
       component: RegisterView,
     },
 
+    {
+      path: "/custom",
+      name: "custom",
 
+      component: CustomView,
+    },
+
+    {
+      path: "/info",
+      name: "info",
+
+      component: info,
+    },
   ],
 });
 

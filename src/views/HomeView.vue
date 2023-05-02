@@ -1,6 +1,9 @@
 <template>
-  <div>
-     <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="container">
+  <br>
+  <h1>Set time for Sunrise</h1>
+     <p>Set your alarm time and enjoy a gentle wake-up experience. Our app activates a sunrise pattern 30 minutes before your alarm, helping you start your day on the right foot!</p>
+  <div class="home">
     <form>
     <h1>Sunrise</h1>
     <p>Set time for Sunrise.</p>
@@ -16,6 +19,7 @@
       <button @click="addAlarm">Submit</button>
     </div>
     </form>
+  </div>
   </div>
 
   
@@ -83,19 +87,29 @@ export default {
 </script>
 
 <style>
+
+.container {
+  position: relative;
+}
+
+
 form {
-  height: 400px;
-  width: 400px;
+  height: 250px;
+  width: 200px;
   background-color: rgba(255, 255, 255, 0.13);
-  position: absolute;
+  text-align: center;
   transform: translate(-50%, -50%);
-  top: 50%;
+  margin-top: 15%;
   left: 50%;
   border-radius: 10px;
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   padding: 40px 20px;
+   position: absolute;
+
+ 
+  width: 50%;
 }
 
 form * {
@@ -119,6 +133,7 @@ label {
   margin-top: 30px;
   font-size: 16px;
   font-weight: 500;
+  text-align: center;
 }
 
 input {
@@ -128,6 +143,7 @@ input {
   background-color: rgba(8, 8, 8, 0.07);
   border-radius: 3px;
   padding: 10 10px;
+  text-align: center;
  
   font-size: 14px;
   font-weight: 300;
@@ -142,6 +158,8 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  text-align: center;
+   margin-top: 2%;
 }
 
 button:hover {
@@ -153,12 +171,26 @@ button:hover {
   color: #6e6d6d;
 }
 
+ h1{
+    
+    text-align: center;
+  }
+
+   p{
+    
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
 @media screen and (max-width: 600px) {
   form {
     height: auto;
-    width: 90%;
+    width: 80%;
     font-size: 10px;
      text-align: center;
+     margin-top: 40%;
   }
 
  
@@ -174,12 +206,14 @@ button:hover {
   display: block;
   }
 
-  h1{
-    font-size: 20px;
+ h1{
+    font-size: 17px;
+    text-align: center;
   }
 
    p{
-    font-size: 14px;
+    font-size: 10px;
+    text-align: center;
   }
 
    button {
