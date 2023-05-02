@@ -39,6 +39,7 @@ const goToInfo = () => {
 </script>
 
 <template>
+  <div class="body">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
    <span class="material-symbols-outlined" @click="goToInfo">
   info
@@ -63,9 +64,58 @@ const goToInfo = () => {
   </header>
 
   <RouterView />
+
+
+  </div>
+
 </template>
 
 <style scoped>
+
+.body {
+  
+  background: linear-gradient(140deg, #d87b9b,  #fff, #dd85a4,  #d8b075 , #fff);
+  background-size: 300% 300%;
+  -webkit-animation: gradient-background 10s ease infinite;
+  -moz-animation: gradient-background 10s ease infinite;
+  animation: gradient-background 10s ease infinite;
+}
+
+@-webkit-keyframes gradient-background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@-moz-keyframes gradient-background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient-background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .my-button {
   border-radius: 50%;
   width: 8px;

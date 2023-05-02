@@ -39,8 +39,8 @@ h3 {
 
    .greetings  h3 {
     font-size: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
     color: black;
   }
 

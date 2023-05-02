@@ -25,14 +25,16 @@
   <div class="page2">
   <br>
   
-  <h1>Welcome to Illumi-Dance,</h1> <p>the innovative lighting solution for your home, entertainment, and events! We understand the growing demand for lighting solutions that not only add aesthetic value but also offer convenience and functionality. 
+  <h1>Welcome to Illumi-Dance,</h1> <p>the innovative lighting solution for your home, entertainment, and events! We understand the growing demand for lighting solutions that not only add aesthetic value but also offer convenience and functionality. <br><br>
 
-  <img alt="phone" src="@/assets/info-phone.png" height="150px" width="200px"/>
+ 
 
   One of the standout features of Illumi-Dance is its ability to set an alarm for your  <span style="font-weight: bold;">sunrise</span>. Unlike existing products, users can set the alarm in the web-app, and 30 minutes before the alarm goes off, the LED lights will automatically turn on and start the “sunrise” show without sound. This feature is perfect for those who want to wake up to a <span style="font-weight: bold;">gently simulated sunlight</span> instead of a traditional alarm clock. The alarm function also makes it easier to keep track of time during events or gatherings.<br><br>
 
 
   At Illumi-Dance, we prioritize user experience and satisfaction. Our product is easy to use, and the web-app allows for seamless customization and control of the lighting effects. The product is also energy-efficient and durable, ensuring that you get the most out of your investment.</p><br></div>
+
+   <img alt="phone" src="@/assets/info-phone.png" height="150px" width="200px"/>
 </template>
 
 

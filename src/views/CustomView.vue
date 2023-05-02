@@ -290,7 +290,10 @@ form {
   text-align: center;
 }
 
-
+img{
+  display: inline-block;
+vertical-align: middle;
+}
 
 
 button {
@@ -343,7 +346,7 @@ button {
   }
 
    p{
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
   }
 

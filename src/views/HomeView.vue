@@ -3,7 +3,7 @@
   <br>
   <h1>Set time for Sunrise</h1>
      <p>Set your alarm time and enjoy a gentle wake-up experience. Our app activates a sunrise pattern 30 minutes before your alarm, helping you start your day on the right foot!</p>
-  <div class="home">
+  
     <form>
     <h1>Sunrise</h1>
     <p>Set time for Sunrise.</p>
@@ -20,7 +20,7 @@
     </div>
     </form>
   </div>
-  </div>
+  
 
   
 </template>
@@ -96,7 +96,7 @@ export default {
 form {
   height: 250px;
   width: 200px;
-  background-color: rgba(255, 255, 255, 0.13);
+ 
   text-align: center;
   transform: translate(-50%, -50%);
   margin-top: 15%;
@@ -106,7 +106,7 @@ form {
   border: 2px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   padding: 40px 20px;
-   position: absolute;
+   
 
  
   width: 50%;
@@ -115,7 +115,7 @@ form {
 form * {
   font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  color: #313131;
+ 
   letter-spacing: 0.5px;
   outline: none;
   border: none;
@@ -181,6 +181,7 @@ button:hover {
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
+    
   }
 
 
@@ -212,7 +213,7 @@ button:hover {
   }
 
    p{
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
   }
 
