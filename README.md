@@ -7,7 +7,7 @@ is user-friendly, adaptable, and energy-efficient. It is intended to be a sustai
 reduces energy consumption. The lighting system will be easy to use and will adapt to the changing needs
 of its users
 
-![alt text](https://github.com/Gaasll/Illumi-Dance/blob/main/home.png?raw=true)
+![alt text](https://github.com/Gaasll/Illumi-Dance/blob/main/read.png?raw=true)
 
 ## Vison
 
