@@ -26,6 +26,8 @@ The product features are categorized into two groups: basic and advanced. Our go
 features by the end of the project, and we will implement advanced features if we have enough time. You
 can find the product features listed below.
 
+![alt text](https://github.com/Gaasll/Illumi-Dance/blob/main/read2.png?raw=true)
+
 ## Basic features:
 
 * The system will include seven LED effects such as chaser, blink, fade, and pulse to give users a
